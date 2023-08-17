@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testLascade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iP7-IK-XN8">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="188"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IG4-lt-rCV">
+                                        <rect key="frame" x="33" y="150" width="322" height="32"/>
+                                        <segments>
+                                            <segment title="Recommend"/>
+                                            <segment title="Price"/>
+                                            <segment title="Cash"/>
+                                            <segment title=""/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZM-la-WgR">
+                                        <rect key="frame" x="337" y="65" width="50" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="S2K-kb-dbj"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="slider.horizontal.3" catalog="system"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6ue-mA-YKt">
+                                        <rect key="frame" x="15" y="68" width="30" height="26.333333333333329"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="9in-kG-DuZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search Text....." translatesAutoresizingMaskIntoConstraints="NO" id="GaZ-jH-wSG">
+                                        <rect key="frame" x="56" y="60" width="281" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="uF6-Gr-UqN"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="IG4-lt-rCV" firstAttribute="top" secondItem="6ue-mA-YKt" secondAttribute="bottom" constant="54" id="3uI-BN-i1q"/>
+                                    <constraint firstItem="6ue-mA-YKt" firstAttribute="top" secondItem="iP7-IK-XN8" secondAttribute="top" constant="66" id="4Vn-oW-45u"/>
+                                    <constraint firstItem="6ue-mA-YKt" firstAttribute="leading" secondItem="iP7-IK-XN8" secondAttribute="leading" constant="15" id="9dU-zL-qg6"/>
+                                    <constraint firstItem="TZM-la-WgR" firstAttribute="bottom" secondItem="6ue-mA-YKt" secondAttribute="bottom" constant="1" id="AXK-tA-PDP"/>
+                                    <constraint firstItem="IG4-lt-rCV" firstAttribute="top" secondItem="GaZ-jH-wSG" secondAttribute="bottom" constant="46" id="Mm7-kM-ykW"/>
+                                    <constraint firstItem="GaZ-jH-wSG" firstAttribute="centerX" secondItem="iP7-IK-XN8" secondAttribute="centerX" id="Qun-Y9-GSC"/>
+                                    <constraint firstAttribute="bottom" secondItem="IG4-lt-rCV" secondAttribute="bottom" constant="7" id="Rv3-yr-TFx"/>
+                                    <constraint firstItem="TZM-la-WgR" firstAttribute="trailing" secondItem="iP7-IK-XN8" secondAttribute="trailingMargin" constant="2" id="fqW-Rb-vsl"/>
+                                    <constraint firstItem="TZM-la-WgR" firstAttribute="top" secondItem="iP7-IK-XN8" secondAttribute="top" constant="65" id="i0N-4y-lL9"/>
+                                    <constraint firstItem="GaZ-jH-wSG" firstAttribute="trailing" secondItem="TZM-la-WgR" secondAttribute="leading" id="iGV-2O-Lc0"/>
+                                    <constraint firstItem="IG4-lt-rCV" firstAttribute="leading" secondItem="iP7-IK-XN8" secondAttribute="leading" constant="33" id="mPk-ZT-o8f"/>
+                                    <constraint firstAttribute="trailing" secondItem="IG4-lt-rCV" secondAttribute="trailing" constant="38" id="rPp-gh-jZx"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="50K-tL-dfF">
+                                <rect key="frame" x="0.0" y="185" width="393" height="635"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="JIz-ps-mxc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7Ok-iU-nzu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iP7-IK-XN8" firstAttribute="leading" secondItem="50K-tL-dfF" secondAttribute="leading" id="0B6-1x-Qsd"/>
+                            <constraint firstItem="50K-tL-dfF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EWZ-av-1Je"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="50K-tL-dfF" secondAttribute="bottom" constant="-2" id="NpE-gj-Ycl"/>
+                            <constraint firstItem="iP7-IK-XN8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eiy-Yy-GEy"/>
+                            <constraint firstItem="50K-tL-dfF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="gGM-CT-78X"/>
+                            <constraint firstItem="iP7-IK-XN8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-59" id="m44-7Z-f2v"/>
+                            <constraint firstItem="iP7-IK-XN8" firstAttribute="trailing" secondItem="50K-tL-dfF" secondAttribute="trailing" id="mpK-XX-PXh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iP7-IK-XN8" secondAttribute="bottom" constant="630" id="v7t-p6-dxG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arrowImageView" destination="6ue-mA-YKt" id="aWo-UB-oZE"/>
+                        <outlet property="filterButton" destination="TZM-la-WgR" id="Nqi-rp-pFM"/>
+                        <outlet property="searchField" destination="GaZ-jH-wSG" id="9Zb-6V-yKd"/>
+                        <outlet property="segmentedControl" destination="IG4-lt-rCV" id="uEQ-3U-E2V"/>
+                        <outlet property="tableView" destination="50K-tL-dfF" id="Xdz-tP-Osj"/>
+                        <outlet property="topView" destination="iP7-IK-XN8" id="R0S-kv-CBL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270.99236641221376" y="564.78873239436621"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
